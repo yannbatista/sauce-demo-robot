@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.1 on darwin)" generated="2024-11-26T20:51:29.779686" rpa="false" schemaversion="5">
+<suite id="s1" name="Sauce-Demo-Robot" source="/Users/suporte/sauce-demo-robot">
+<suite id="s1-s1" name="Checkout" source="/Users/suporte/sauce-demo-robot/checkout">
+<suite id="s1-s1-s1" name="checkoutMissingInfo" source="/Users/suporte/sauce-demo-robot/checkout/checkoutMissingInfo.robot">
+<test id="s1-s1-s1-t1" name="Cenario 2: Verificar Erro de Nome no Checkout" line="90">
+<kw name="Selecionar Item">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-26T20:51:30.199329" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-backpack'.</msg>
+<msg time="2024-11-26T20:51:30.201002" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-11-26T20:51:30.201421" level="FAIL">No browser is open.</msg>
+<arg>${SELECT_PRODUCT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-11-26T20:51:30.196707" elapsed="0.020900">No browser is open.</status>
+</kw>
+<status status="FAIL" start="2024-11-26T20:51:30.194691" elapsed="0.023446">No browser is open.</status>
+</kw>
+<kw name="Selecionar Carrinho">
+<status status="NOT RUN" start="2024-11-26T20:51:30.218920" elapsed="0.000275"/>
+</kw>
+<kw name="Iniciação Checkout">
+<status status="NOT RUN" start="2024-11-26T20:51:30.220157" elapsed="0.000278"/>
+</kw>
+<kw name="Inserir Nome Checkout">
+<arg>${EMPTY}</arg>
+<status status="NOT RUN" start="2024-11-26T20:51:30.221430" elapsed="0.000485"/>
+</kw>
+<kw name="Inserir Sobrenome Checkout">
+<arg>${LAST_NAME_CHECKOUT}</arg>
+<status status="NOT RUN" start="2024-11-26T20:51:30.223919" elapsed="0.000309"/>
+</kw>
+<kw name="Inserir Postal Checkout">
+<arg>${POSTAL_CODE_CHECKOUT}</arg>
+<status status="NOT RUN" start="2024-11-26T20:51:30.226480" elapsed="0.000494"/>
+</kw>
+<kw name="Continuar Compra">
+<status status="NOT RUN" start="2024-11-26T20:51:30.228101" elapsed="0.000281"/>
+</kw>
+<kw name="Verificar Falha da Compra">
+<arg>${FIRST_NAME_ERROR}</arg>
+<status status="NOT RUN" start="2024-11-26T20:51:30.230348" elapsed="0.000273"/>
+</kw>
+<kw name="Fechar Mensagem de Erro">
+<status status="NOT RUN" start="2024-11-26T20:51:30.232156" elapsed="0.002560"/>
+</kw>
+<status status="FAIL" start="2024-11-26T20:51:30.191771" elapsed="0.048607">No browser is open.</status>
+</test>
+<status status="FAIL" start="2024-11-26T20:51:29.836411" elapsed="0.427011"/>
+</suite>
+<status status="FAIL" start="2024-11-26T20:51:29.834119" elapsed="0.438742"/>
+</suite>
+<status status="FAIL" start="2024-11-26T20:51:29.791387" elapsed="0.487677"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sauce-Demo-Robot">Sauce-Demo-Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Checkout">Sauce-Demo-Robot.Checkout</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="checkoutMissingInfo">Sauce-Demo-Robot.Checkout.checkoutMissingInfo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

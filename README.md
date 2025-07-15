@@ -28,14 +28,84 @@ Este repositório contém testes automatizados desenvolvidos com **Robot Framewo
 - Checkout com informações faltantes
 - Checkout com sucesso
 
+---
+
+## 📂 Estrutura de Pastas
+
+```
+.
+├── cart/
+│   ├── addToCart.robot
+│   └── removeFromCart.robot
+├── checkout/
+│   ├── checkoutCancel.robot
+│   ├── checkoutMissingInfo.robot
+│   └── checkoutSuccess.robot
+├── login/
+│   ├── loginFail.robot
+│   ├── loginInvalid.robot
+│   └── loginSucess.robot
+└── results/
+    ├── log.html
+    ├── output.xml
+    └── report.html
+```
+
+---
+
+## ⚙️ Como instalar e executar
+
+### 1. Crie e ative um ambiente virtual
+
+```bash
 python -m venv venv
 
 # Ativação no Windows:
 venv\Scripts\activate
+```
 
+### 2. Instale as dependências
+
+```bash
 pip install robotframework
 pip install robotframework-browser
 rfbrowser init
+```
 
+---
+
+## ▶️ Como rodar os testes
+
+### Rodar todos os testes:
+
+```bash
+robot -d results .
+```
+
+### Rodar uma pasta específica (ex: login):
+
+```bash
+robot -d results login/
+```
+
+### Rodar um teste específico:
+
+```bash
 robot -d results login/loginSucess.robot
+```
 
+---
+
+## 📊 Relatórios gerados
+
+Após a execução, os seguintes arquivos serão gerados na pasta `results/`:
+
+- `log.html` – Log detalhado da execução
+- `report.html` – Relatório consolidado
+- `output.xml` – Arquivo para integração ou parsing
+
+---
+
+## 👨‍💻 Autor
+
+- [Yann Batista](https://github.com/yannbatista)
